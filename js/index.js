@@ -125,8 +125,29 @@ topStyleFunk.style.backgroundColor = 'blue';
 let midStyleFunk = document.querySelector('.bottom-content');
 midStyleFunk.style.backgroundColor = 'green';
 
-let contactStyleFunk = document.getElementsByClassName('contact');
-contactStyleFunk.style.backgroundColor = 'blue';
+/*let contactStyleFunk = document.querySelector('.contact');
+contactStyleFunk.style.backgroundColor = 'blue';*/
+
+let contactExample = document.getElementsByClassName('contact');
+contactExample[0].style.backgroundColor = 'green';
+
+
+
+buttonSelector.addEventListener('click', (event) => {
+event.target.style.backgroundColor = 'red';
+});
+
+hOne.addEventListener('mouseenter', (event) => {
+  event.target.textContent = 'Not So Fast!';
+  
+} )
+
+midImage.addEventListener('mouseenter', (event) => {
+  destructSection = document.querySelector('.cta');
+  destructSection.textContent = 'You messed up!';
+  
+})
+
 
 /*const _$ = {
 
